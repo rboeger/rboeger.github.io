@@ -5,43 +5,6 @@
     --button-color-hover: #004747;
 }
 
-.navbar-item {
-    display: flex;
-    height: 100%;
-    line-height: 100%;
-    justify-content: center;
-}
-
-.navbar {
-    position: fixed;
-    width: 100vw;
-    margin: 0;
-    top: -10px;
-    left: 0;
-    border-radius: 10px;
-    height: 60px;
-}
-
-.navbar-spacer {
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
-    height: 60px;
-    line-height: 60px;
-    width: 100px;
-    align-items: center;
-}
-
-.navbar-name {
-    width: 78vw;
-    color: var(--main-font-color);
-    text-align: left;
-    padding-left: 40px;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 body {
     margin: 0;
     color: var(--main-font-color);
@@ -52,46 +15,27 @@ html {
     background-color: black;
 }
 
-.nav-item:hover {
-    /*background-color: #9d9d9d;*/
-    border-radius: 5px;
-    transition: linear 200ms;
-    color: rgb(9, 139, 5);
-}
-
 #intro-block {
-    /*width: 100vw;*/
     width: 100%;
     margin: auto;
-    padding-bottom: 30px;
-    /* background-color:rgb(71, 71, 71); */
-    /*border-radius: 20px;*/
-    /* box-shadow: rgba(0, 0, 0, 0.289) 3px 3px 15px 3px; */
-    padding-top: 80px;
-    row-gap: 50px;
-    column-gap: 25px;
     height: 100vh;
-    /*border: #e0aa36 solid 2px;*/
-    /*background-image: url("static/programming_background_image.webp");*/
-    /*object-fit: cover !important;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #name {
     font-size: 4vw;
-    /*font-size: 4.5rem;*/
     color: var(--main-font-color);
     margin: auto;
     text-align: center;
-    margin-top: 25vh;
     text-decoration: none;
-    /*font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-    /*font-family: Oxygen;*/
     font-weight:200;
 }
 
 #name-div {
     width: 75vw;
-    /* margin: auto; c */
+    margin: auto;
 }
 
 #intro-background-img {
@@ -111,8 +55,8 @@ html {
 }
 
 .bio-text-content {
-    font-size: 1.7rem;
-    margin-left: 18%;
+    font-size: 2rem;
+    margin-left: 20%;
     margin-top: 1%;
     /*text-align: right;*/
 }
