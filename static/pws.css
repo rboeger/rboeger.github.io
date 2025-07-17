@@ -63,7 +63,6 @@ html {
     font-size: 2rem;
     margin-left: 20%;
     margin-top: 1%;
-    /*text-align: right;*/
 }
 
 #project-div {
@@ -79,18 +78,13 @@ html {
 
 .project-block-left {
     width: 35%;
-    /* background-color:rgb(116, 137, 111);*/
     background-color: #3E424B;
     border-radius: 15px;
     padding: 10px;
     margin-left: 15%;
-    /* height: 300px; */
     margin-bottom: 100px;
-    /* border: rgb(62, 62, 62) solid 6px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* row-gap: 50px; */
-    /* column-gap: 25px; */
 }
 
 .project-block-right {
@@ -119,7 +113,6 @@ html {
     object-fit: cover;
     aspect-ratio: 1/1;
     border-radius: 5px;
-    /* box-shadow: black 3px 3px 15px 3px; */
 }
 
 .project-img-link {
@@ -147,18 +140,6 @@ html {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
 }
-
-/*.card {*/
-    /*background-color: rgba(206, 206, 206, 0)!important;*/
-/*}*/
-
-/*.card-body {*/
-    /*background-color: rgba(206, 206, 206, 0)!important;*/
-/*}*/
-
-/*.card-title {*/
-    /*background-color: rgba(206, 206, 206, 0)!important;*/
-/*}*/
 
 .card-text {
     color: rgb(206, 206, 206);
@@ -241,7 +222,6 @@ html {
     display: flex;
     justify-content: center;
     column-gap: 9rem;
-    /* padding-bottom: 5rem; */
 }
 
 #certifications-div {
