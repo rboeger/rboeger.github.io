@@ -25,6 +25,11 @@ html {
     justify-content: center;
 }
 
+.intro-separator {
+    height: 8rem;
+    background-color: black;
+}
+
 #name {
     font-size: 4vw;
     color: var(--main-font-color);
@@ -41,11 +46,10 @@ html {
 
 #intro-background-img {
     position: absolute;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: url("../programming_background_image.webp");
     background-size: cover;
     transform: scale(1.01);
     filter: blur(1px);
@@ -69,8 +73,8 @@ html {
 
 #content-section {
     background: linear-gradient(#000000, #364848);
-    padding-bottom: 15rem;
     overflow-x: hidden;
+    padding-bottom: 4rem;
 }
 
 .project-block-left {
@@ -222,7 +226,7 @@ html {
 }
 
 .section {
-    padding-bottom: 12rem;
+    padding-bottom: 8rem;
 }
 
 .devicon-wordmark {
@@ -237,7 +241,7 @@ html {
     display: flex;
     justify-content: center;
     column-gap: 9rem;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
 }
 
 #certifications-div {
@@ -265,11 +269,11 @@ html {
     }
     
     #name {
-        font-size: 9vw;
+        font-size: 7vw;
     }
 
     #intro-block {
-        width: 100%;
+        width: 100vw;
     }
 
     #project-div {
