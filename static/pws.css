@@ -16,7 +16,7 @@ html {
 }
 
 #intro-block {
-    width: 100%;
+    width: 99vw;
     margin: auto;
     height: 100vh;
     display: flex;
@@ -40,7 +40,7 @@ html {
 
 #intro-background-img {
     position: absolute;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     top: 0;
     left: 0;
@@ -69,6 +69,7 @@ html {
 #content-section {
     background: linear-gradient(#000000, #364848);
     padding-bottom: 15rem;
+    overflow-x: hidden;
 }
 
 .project-block-left {
@@ -101,7 +102,7 @@ html {
 .section-header {
     font-size: 60px;
     width: 60%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 100px;
     color: var(--main-font-color);
     padding-top: 7rem;
@@ -280,7 +281,7 @@ html {
     }
 
     .skills-div {
-        column-gap: 2rem;
+        column-gap: 3rem;
         width: 100vw;
         padding-bottom: 2rem;
     }
@@ -289,5 +290,14 @@ html {
         padding-top: 1rem;
         margin-bottom: 3rem;
         font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .contact-info-text {
+        font-size: 1rem;
+    }
+
+    .contact-logo {
+        font-size: 1rem;
     }
 }
