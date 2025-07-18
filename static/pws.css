@@ -224,6 +224,10 @@ html {
     column-gap: 9rem;
 }
 
+.skills-spacer {
+    height: 5rem;
+}
+
 #certifications-div {
     margin: auto;
     width: 50%;
@@ -268,7 +272,10 @@ html {
     .skills-div {
         column-gap: 3rem;
         width: 100vw;
-        padding-bottom: 2rem;
+    }
+
+    .skills-spacer {
+        height: 2rem;
     }
 
     .section-header {
