@@ -223,23 +223,17 @@ html {
 }
 
 #about-pic {
-    width: 100%;
+    width: 25%;
     border-radius: 2%;
     border: var(--button-color) solid 2px;
     grid-area: about-pic;
+    float: left;
+    margin-right: 2rem;
 }
 
 #about-section {
-    display: grid;
     width: 50%;
     margin: auto;
-    column-gap: 1.5rem;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "about-pic about-1"
-        "about-pic about-2"
-        "about-pic about-3";
 }
 
 .about-text {
@@ -334,15 +328,12 @@ html {
     #about-section {
         width: 90%;
         column-gap: 1rem;
-        row-gap: 0.8rem;
-        grid-template-areas:
-            "about-pic about-1"
-            "about-2 about-2"
-            "about-3 about-3";
     }
 
     #about-pic {
         margin-top: 1rem;
+        margin-right: 0.7rem;
+        width: 35%;
     }
 
     .about-text {
