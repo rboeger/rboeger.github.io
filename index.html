@@ -23,8 +23,7 @@
   <div id="intro-block">
     <div id="name-div">
       <h1 id="name" class="lekton-regular" data-aos="fade-up" data-aos-duration="800">Hi, I'm <span class="text-pop"
-          data-aos-duration="800" data-aos="fade-up" data-aos-delay="600">Russell!</span><br>I'm a technology
-        professional and full stack web developer.</h1>
+          data-aos-duration="800" data-aos="fade-up" data-aos-delay="600">Russell!</span><br>I'm a problem solver who loves tech, systems, and making complex tasks simple.</h1>
       <!--<div class="bio-text-content text-pop lekton-bold-italic" data-aos="fade-right" data-aos-duration="800" data-aos-delay="700">or an aspiring one at least..</div>-->
     </div>
   </div>
@@ -38,7 +37,7 @@
     <div class="section" id="about-section">
       <img id="about-pic" src="./static/edited_received_414941042973029.jpeg" data-aos="fade-right" data-aos-duration="800">
       <div id="about-1" data-aos="fade-left" data-aos-duration="800">
-        <p class="about-text" data-aos="fade-left" data-aos-duration="800">I’ve always been curious about how things work. ever since I was a kid, I enjoyed taking things apart, working with computers, and learning by doing. Over the years, I’ve taken on a wide range of roles, from building custom pipe organs to managing warehouse operations. Each one has helped me develop a strong and adaptable skill set.</p>
+        <p class="about-text" data-aos="fade-left" data-aos-duration="800">I’ve always been curious about how things work. Ever since I was a kid, I enjoyed taking things apart, working with computers, and learning by doing. Over the years, I’ve taken on a wide range of roles, from building custom pipe organs to managing warehouse operations. Each one has helped me develop a strong and adaptable skill set.</p>
         <p class="about-text" data-aos="fade-left" data-aos-duration="800">Recently, I’ve been focused on turning my lifelong interest in technology into a professional career. I’ve been building my knowledge in programming, IT support, and web development by working on hands-on projects, exploring new tools, and constantly challenging myself to grow. I care deeply about doing good work, supporting my team, and always staying open to learning something new.</p>
         <p class="about-text" data-aos="fade-left" data-aos-duration="800">Thanks for visiting my site—feel free to check out my projects or get in touch!</p>
       </div>
@@ -70,7 +69,7 @@
     </div>
 
     <!-- Projects -->
-    <h2 id="projects" class="lekton-bold mx-auto section-header" data-aos="fade-up" data-aos-duration="800">Projects
+    <h2 id="projects" class="lekton-bold mx-auto section-header" data-aos="fade-up" data-aos-duration="800">Coding Projects
     </h2>
     <div class="row mx-auto section" id="project-div">
       <div class="col-sm project-card" data-aos="fade-up" data-aos-duration="800">
@@ -127,6 +126,71 @@
       </div>
     </div>
 
+    <!-- Project Gallery -->
+    <h2 class="lekton-bold mx-auto section-header" data-aos="fade-up" data-aos-duration="800">Other Projects I've Worked On</h2>
+    <div class="gallery-container" data-aos="fade-up" data-aos-duration="800">
+      <div class="gallery-grid">
+        <!-- Gallery Items -->
+        <div class="gallery-item" data-description="Organ bench that I custom built out of red oak.">
+          <img src="./static/organ_bench.jpg" alt="red oak organ bench">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Organ Bench</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-description="Fiber optic switching system that I wired for a pipe organ.">
+          <img src="./static/fiber_optic.jpg" alt="Fiber optic switching system">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Fiber Optic Switching System</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-description="Pipe organ air pressure regulator that I re-leathered because the leather was aged and cracking.">
+          <img src="./static/regulator.jpg" alt="Organ air pressure regulator">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Organ Air Pressure Regulator</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-description="Solenoids that I installed and wired. Used to control air flow for a pipe organ.">
+          <img src="./static/solenoids.jpg" alt="Organ solenoids">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Organ Solenoids</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-description="Peterson pipe organ switching system that I wired using punch-downs.">
+          <img src="./static/switching_system2.jpg" alt="Organ switching system">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Organ Switching System</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-description="Pipe organ switching system that I had to troubleshoot in a church.">
+          <img src="./static/switching_system1.jpg" alt="Organ switching system">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Organ Switching System</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-description="Custom gaming pc that I built using new parts.">
+          <img src="./static/pc_build1.jpg" alt="New custom gaming pc">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">New custom Gaming PC</div>
+          </div>
+        </div>
+        <div class="gallery-item" data-description="Custom gaming pc that I built using used parts.">
+          <img src="./static/pc_build2.jpg" alt="Used custom gaming pc">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title">Used custom Gaming PC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fullscreen Modal -->
+    <div id="gallery-modal" class="gallery-modal">
+      <span class="gallery-modal-close">&times;</span>
+      <div class="gallery-modal-content">
+        <img id="modal-image" src="" alt="">
+        <div id="modal-description" class="gallery-modal-description"></div>
+      </div>
+    </div>
+
     <!-- Certifications -->
     <h2 id="section-header-skills" class="lekton-bold mx-auto section-header" data-aos="fade-up"
       data-aos-duration="800">Certifications</h2>
@@ -143,15 +207,15 @@
         <div class="contact-info-container">
           <div class="contact-info">
             <i class="devicon-github-original text-pop contact-logo"></i>
-            <a class="contact-info-text" href="https://github.com/rboeger">https://github.com/rboeger</a>
+            <a class="contact-info-text" target="_blank" href="https://github.com/rboeger">https://github.com/rboeger</a>
           </div>
           <div class="contact-info">
             <i class="devicon-linkedin-plain text-pop contact-logo"></i>
-            <a class="contact-info-text" href="https://linkedin.com/in/russell-boeger-574650207">https://linkedin.com/in/russell-boeger-574650207</a> 
+            <a class="contact-info-text" target="_blank" href="https://linkedin.com/in/russell-boeger-574650207">https://linkedin.com/in/russell-boeger-574650207</a> 
           </div>
           <div class="contact-info">
             <i class="fas fa-envelope text-pop contact-logo"></i>
-            <a class="contact-info-text" href="mailto:russell.boeger@gmail.com">russell.boeger@gmail.com</a>
+            <a class="contact-info-text" target="_blank" href="mailto:russell.boeger@gmail.com">russell.boeger@gmail.com</a>
           </div>
         </div>
       </div>
