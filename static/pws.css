@@ -98,6 +98,18 @@ html {
     border: rgb(62, 62, 62) solid 6px
 }
 
+a:not(.btn) {
+    color: var(--font-highlight-color) !important;
+}
+
+a:hover:not(.btn) {
+    color: var(--font-highlight-color) !important;
+}
+
+a:visited:not(.btn) {
+    color: var(--font-highlight-color) !important;
+}
+
 .section-header {
     font-size: 60px;
     width: 60%;
@@ -307,6 +319,48 @@ html {
 .gallery-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Swipe animations for mobile gallery */
+#modal-image {
+  transition: transform 0.3s ease-out;
+}
+
+/* Initial positions */
+#modal-image.swipe-left {
+  transform: translateX(100%);
+}
+
+#modal-image.swipe-right {
+  transform: translateX(-100%);
+}
+
+/* Animation keyframes */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations */
+#modal-image.swipe-in-left {
+  animation: slideInFromRight 0.3s ease-out forwards;
+}
+
+#modal-image.swipe-in-right {
+  animation: slideInFromLeft 0.3s ease-out forwards;
 }
 
 .gallery-item img {

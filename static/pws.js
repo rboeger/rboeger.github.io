@@ -1,42 +1,66 @@
 AOS.init();
 
-// Gallery functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the modal elements
     const modal = document.getElementById('gallery-modal');
     const modalImg = document.getElementById('modal-image');
     const modalDescription = document.getElementById('modal-description');
     const closeBtn = document.querySelector('.gallery-modal-close');
-    
-    // Get all gallery items
     const galleryItems = document.querySelectorAll('.gallery-item');
     let currentIndex = 0;
     
-    // Function to open the modal with the clicked image
-    function openModal(index) {
+    function openImageModal(index, direction = 'none') {
         const item = galleryItems[index];
         const imgSrc = item.querySelector('img').src;
         const description = item.getAttribute('data-description');
+        const isMobile = window.innerWidth <= 768; // Check if mobile/tablet
         
+        // Set up animation classes
+        if (isMobile && direction !== 'none') {
+            // Remove any existing animation classes
+            modalImg.classList.remove('swipe-left', 'swipe-right', 'swipe-in-left', 'swipe-in-right');
+            
+            // Set initial position based on direction
+            if (direction === 'next') {
+                modalImg.classList.add('swipe-left');
+            } else if (direction === 'prev') {
+                modalImg.classList.add('swipe-right');
+            }
+            
+            // Force reflow to ensure the initial position is applied
+            void modalImg.offsetWidth;
+            
+            // Apply the slide-in animation
+            if (direction === 'next') {
+                modalImg.classList.add('swipe-in-left');
+            } else if (direction === 'prev') {
+                modalImg.classList.add('swipe-in-right');
+            }
+            
+            // Remove animation classes after animation completes
+            modalImg.addEventListener('animationend', function onAnimationEnd() {
+                modalImg.classList.remove('swipe-left', 'swipe-right', 'swipe-in-left', 'swipe-in-right');
+                modalImg.removeEventListener('animationend', onAnimationEnd);
+            }, { once: true });
+        }
+        
+        // Update image and description
         modalImg.src = imgSrc;
         modalImg.alt = item.querySelector('img').alt;
         modalDescription.textContent = description;
         
-        // Show the modal with animation
-        modal.style.display = 'flex';
-        setTimeout(() => {
-            modal.classList.add('show');
-        }, 10);
+        // Show modal if not already shown
+        if (modal.style.display !== 'flex') {
+            modal.style.display = 'flex';
+            setTimeout(() => {
+                modal.classList.add('show');
+            }, 10);
+        }
         
-        // Update current index
         currentIndex = index;
-        
-        // Prevent scrolling on the body when modal is open
         document.body.style.overflow = 'hidden';
     }
     
-    // Function to close the modal
-    function closeModal() {
+    function closeImageModal() {
         modal.classList.remove('show');
         setTimeout(() => {
             modal.style.display = 'none';
@@ -44,46 +68,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     }
     
-    // Function to show next image
-    function showNext() {
-        currentIndex = (currentIndex + 1) % galleryItems.length;
-        openModal(currentIndex);
+    function showNextImage() {
+        const newIndex = (currentIndex + 1) % galleryItems.length;
+        openImageModal(newIndex, 'next');
     }
     
-    // Function to show previous image
-    function showPrevious() {
-        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
-        openModal(currentIndex);
+    function showPreviousImage() {
+        const newIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        openImageModal(newIndex, 'prev');
     }
     
-    // Add click event listeners to all gallery items
     galleryItems.forEach((item, index) => {
-        item.addEventListener('click', () => openModal(index));
+        item.addEventListener('click', () => openImageModal(index));
     });
     
-    // Close modal when clicking the close button
-    closeBtn.addEventListener('click', closeModal);
+    closeBtn.addEventListener('click', closeImageModal);
     
-    // Close modal when clicking outside the image
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-            closeModal();
+            closeImageModal();
         }
     });
     
-    // Keyboard navigation
+    // Keyboard navigation for modal
     document.addEventListener('keydown', (e) => {
         if (!modal.classList.contains('show')) return;
         
         switch(e.key) {
             case 'Escape':
-                closeModal();
+                closeImageModal();
                 break;
             case 'ArrowLeft':
-                showPrevious();
+                showPreviousImage();
                 break;
             case 'ArrowRight':
-                showNext();
+                showNextImage();
                 break;
         }
     });
@@ -105,21 +124,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const swipeThreshold = 50; // Minimum distance to consider it a swipe
         
         if (touchEndX < touchStartX - swipeThreshold) {
-            // Swipe left - show next
-            showNext();
+            showNextImage();
         } else if (touchEndX > touchStartX + swipeThreshold) {
-            // Swipe right - show previous
-            showPrevious();
+            showPreviousImage();
         }
     }
-});
-
-// Your existing code
-window.onload = () => {
-    console.log("Website loaded successfully");
-}
-
-const testElement = document.getElementById('projects');
-testElement?.addEventListener('scroll', () => {
-    console.log("Scrolling in projects section");
 });
