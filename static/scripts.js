@@ -68,8 +68,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: 'static/building/pc_build2.jpg', title: 'Custom PC (used components)' },
         { src: 'static/building/regulator.jpg', title: 'Pressure Regulator' },
         { src: 'static/building/solenoids.jpg', title: 'Solenoid Components under Toe Board' },
-        { src: 'static/building/switching_system1.jpg', title: 'Switching System' },
-        { src: 'static/building/switching_system2.jpg', title: 'Switching System' }
+        { src: 'static/building/switching_system2.jpg', title: 'Switching System Detail' },
+        { src: 'static/building/band_playing.png', title: 'My Band "Etale" Performing' },
+        { src: 'static/building/bench_routing_and_finish.jpg', title: 'Organ Bench Routing and Finish' },
+        { src: 'static/building/custom_cat_tree.jpg', title: 'Custom Cat Tree' },
+        { src: 'static/building/mug_rack.jpg', title: 'Custom Mug Rack' },
+        { src: 'static/building/custom_coaster_set.jpg', title: 'Custom Coaster Set' },
+        { src: 'static/building/offset_chest.jpg', title: 'Organ Offset Chest' },
+        { src: 'static/building/organ_chest_2.jpg', title: 'Organ Offset Chest 2' },
+        { src: 'static/building/organ_chest_3.jpg', title: 'Organ Offset Chest 3' },
+        { src: 'static/building/sideways_offset_chest.jpg', title: 'Sideways Offset Chest' }
     ];
     
     let currentCarouselIndex = 0;
@@ -122,13 +130,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Gallery modal functionality
     const galleryData = [
-        { src: 'static/building/organ_bench.jpg', title: 'Organ Bench' },
-        { src: 'static/building/pc_build1.jpg', title: 'Pipeline Component' },
-        { src: 'static/building/pc_build2.jpg', title: 'Pipeline Component Assembly' },
-        { src: 'static/building/regulator.jpg', title: 'Regulator System' },
-        { src: 'static/building/solenoids.jpg', title: 'Solenoid Components' },
-        { src: 'static/building/switching_system1.jpg', title: 'Switching System' },
-        { src: 'static/building/switching_system2.jpg', title: 'Switching System Detail' }
+        { src: 'static/building/organ_bench.jpg', title: 'Custom Organ Bench' },
+        { src: 'static/building/pc_build1.jpg', title: 'Custom PC (new components)' },
+        { src: 'static/building/pc_build2.jpg', title: 'Custom PC (used components)' },
+        { src: 'static/building/regulator.jpg', title: 'Pressure Regulator' },
+        { src: 'static/building/solenoids.jpg', title: 'Solenoid Components under Toe Board' },
+        { src: 'static/building/switching_system2.jpg', title: 'Switching System Detail' },
+        { src: 'static/building/band_playing.png', title: 'My Band "Etale" Performing' },
+        { src: 'static/building/bench_routing_and_finish.jpg', title: 'Organ Bench Routing and Finish' },
+        { src: 'static/building/custom_cat_tree.jpg', title: 'Custom Cat Tree' },
+        { src: 'static/building/mug_rack.jpg', title: 'Custom Mug Rack' },
+        { src: 'static/building/custom_coaster_set.jpg', title: 'Custom Coaster Set' },
+        { src: 'static/building/offset_chest.jpg', title: 'Organ Offset Chest' },
+        { src: 'static/building/organ_chest_2.jpg', title: 'Organ Offset Chest 2' },
+        { src: 'static/building/organ_chest_3.jpg', title: 'Organ Offset Chest 3' },
+        { src: 'static/building/sideways_offset_chest.jpg', title: 'Sideways Offset Chest' }
     ];
 
     const galleryToggle = document.getElementById('galleryToggle');
