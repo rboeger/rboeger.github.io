@@ -1,239 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Russell Boeger Portfolio</title>
-  <link rel="stylesheet" href="./static/pws.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <script src="https://kit.fontawesome.com/84781eaed0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Russell Boeger</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
-
 <body>
-  <!-- intro div block -->
-  <img id="intro-background-img" src="./static/programming_background_image.webp">
-  <div id="intro-block">
-    <div id="name-div">
-      <h1 id="name" class="lekton-regular" data-aos="fade-up" data-aos-duration="800">Hi, I'm <span class="text-pop"
-          data-aos-duration="800" data-aos="fade-up">Russell!</span><br>I'm a problem solver who loves tech, systems, and making complex tasks simple.</h1>
-      <!--<div class="bio-text-content text-pop lekton-bold-italic" data-aos="fade-right" data-aos-duration="800" data-aos-delay="700">or an aspiring one at least..</div>-->
-    </div>
-  </div>
-  <div class="intro-separator"></div>
-
-  <!-- Content Section -->
-  <div id="content-section">
-
-    <!-- About me -->
-    <h2 class="lekton-bold mx-auto section-header" id="section-header-about" data-aos="fade-up" data-aos-duration="800">About Me</h2>
-    <div class="section" id="about-section">
-      <img id="about-pic" src="./static/edited_received_414941042973029.jpeg" data-aos="fade-right" data-aos-duration="800">
-      <div id="about-1" data-aos="fade-left" data-aos-duration="800">
-        <p class="about-text" data-aos="fade-left" data-aos-duration="800">I’ve always been curious about how things work. Ever since I was a kid, I enjoyed taking things apart, working with computers, and learning by doing. Over the years, I’ve taken on a wide range of roles, from building custom pipe organs to managing warehouse operations. Each one has helped me develop a strong and adaptable skill set.</p>
-        <p class="about-text" data-aos="fade-left" data-aos-duration="800">Recently, I’ve been focused on turning my lifelong interest in technology into a professional career. I’ve been building my knowledge in programming, IT support, and web development by working on hands-on projects, exploring new tools, and constantly challenging myself to grow. I care deeply about doing good work, supporting my team, and always staying open to learning something new.</p>
-        <p class="about-text" data-aos="fade-left" data-aos-duration="800">Thanks for visiting my site—feel free to check out my <a href="#projects">projects</a> or <a href="#contact">get in touch</a>!</p>
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="section">
-      <h2 class="lekton-bold mx-auto section-header" id="section-header-skills" data-aos="fade-up"
-        data-aos-duration="800">Skills</h2>
-      <div class="skills-div" data-aos="fade-right" data-aos-duration="800">
-        <i class="devicon-html5-plain-wordmark devicon-wordmark skills-icon"></i>
-        <i class="devicon-css3-plain-wordmark devicon-wordmark skills-icon"></i>
-        <i class="devicon-javascript-plain devicon-wordmark skills-icon"></i>
-        <i class="devicon-python-plain-wordmark devicon-wordmark skills-icon"></i>
-      </div>
-      <div class="skills-spacer"></div>
-
-      <div class="skills-div" data-aos="fade-left" data-aos-duration="800">
-        <i class="devicon-pandas-plain-wordmark devicon-wordmark skills-icon"></i>
-        <i class="devicon-neovim-plain-wordmark devicon-wordmark skills-icon"></i>
-        <i class="devicon-flask-original-wordmark devicon-wordmark skills-icon"></i>
-      </div>
-      <div class="skills-spacer"></div>
-
-      <div class="skills-div" data-aos="fade-right" data-aos-duration="800">
-        <i class="devicon-qt-original devicon-wordmark skills-icon"></i>
-        <i class="devicon-linux-plain devicon-wordmark skills-icon"></i>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <h2 id="projects" class="lekton-bold mx-auto section-header" data-aos="fade-up" data-aos-duration="800">Coding Projects
-    </h2>
-    <div class="row mx-auto section" id="project-div">
-      <div class="col-sm project-card" data-aos="fade-up" data-aos-duration="800">
-        <img class="card-img-top img-thumbnail" src="./static/chekers-game-screenshot.png"
-          alt="screenshot of checkers page">
-        <div class="card-body">
-          <h4 class="card-title lekton-bold">Checkers Game</h4>
-          <p class="card-text">This is a game of checkers created in vanilla javascript.
-            The first turn is randomized and an infinite number of jumps are possible.
-            If a jump is possible, it is required to be taken and any other linked jumps must be taken.</p>
-          <div>
-            <a href="https://rboeger.pythonanywhere.com/checkers-game" target="_blank"
-              class="btn btn-dark lekton-bold">Live page</a>
-            <a href="https://github.com/rboeger/checkers-game" target="_blank" class="btn btn-dark lekton-bold">More
-              info</a>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Russell Boeger</div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon sun-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                    </svg>
+                    <svg class="icon moon-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <span class="theme-text">Light</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#organ-gallery">My Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="blog/">Blog</a></li>
+                <!-- <li><a href="#bookkeeping">Bookkeeping</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
 
-      <div class="col-sm project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-        <img class="card-img-top img-thumbnail" src="./static/rulerfrac-screenshot.png"
-          alt="screenshot of rulerfrac page">
-        <div class="card-body">
-          <h4 class="card-title lekton-bold">Decimal to Fraction Calculator</h4>
-          <p class="card-text">
-            This is a simple decimal to fraction calculator.
-            However, the resulting fractions are quantized to 16ths or 32nds in order to use them with a ruler or tape
-            measure.
-            This was used extensively in my previous role as a Pipe Organ Manufacturer.</p>
-          <div>
-            <a href="https://rboeger.pythonanywhere.com/rulerfrac" target="_blank" class="btn btn-dark lekton-bold">Live
-              page</a>
-            <a href=# class="btn btn-dark lekton-bold">More info</a>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="static/selfies/professional-headshot.png" alt="Profile Photo" class="profile-photo">
+            <h1>Hey, I'm Russell Boeger</h1>
+            <p class="tagline">Organ Builder • Coder • Bookkeeper</p>
+            <p class="subtitle">I’ve spent 9 years in the pipe organ industry while coding and woodworking on the side. Then moved into warehouse management and video editing. Now I’m looking to get into bookkeeping and accounting.</p>
         </div>
-      </div>
+    </section>
 
-      <div class="col-sm project-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-        <img class="card-img-top img-thumbnail" src="./static/super-ping-pong-screenshot.png"
-          alt="screenshot of super ping pong page">
-        <div class="card-body">
-          <h4 class="card-title lekton-bold">Ping Pong Game</h4>
-          <p class="card-text">This is a pong game inspired by Super Ping Pong for the Sega Genesis.
-            I had a lot of fun making powerups and making ps5 controller support.
-            Powerups include: Bounce(Horizontal and Vertical), speed change(increase and decrease), skull(if ball hits
-            paddle, it will lose the round),
-            multiple balls, shield, random location, change paddle size, and sticky paddle.</p>
-          <div>
-            <a href="https://russellboeger.com/super-ping-pong" class="btn btn-dark lekton-bold">Live page</a>
-            <a href="https://github.com/rboeger/super-ping-pong" class="btn btn-dark lekton-bold">More info</a>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>My Story</h2>
+            <div class="about-content">
+                <p>
+                    For 9 years, I've built, designed, and serviced pipe organs. The meticulous, technical work piqued my interest 
+                    and fueled my love of learning. 
+                    Organs are heavily engineered mechanical, electrical, pneumatic symphonies, and I 
+                    loved every minute of bringing them to life. 
+                </p>
+                <p>
+                    But I've always been drawn to code too. 
+                    I've always been a problem solver and optimizer, and programming gave me a natural outlet for that.
+                    Being able to write software to automate tasks and watch your code make a difficult task more manageable is incredibly rewarding.
+                    After taking high school programming classes in Quick Basic and Visual Basic 6, I continued to learn python and JavaScript on my own.
+                    JavaScript, of course, naturally led to web development which requires HTML and CSS. 
+                    I also got into data analysis with Python, using libraries like Pandas to make sense of complex datasets (useful for warehouse management).
+                </p>
+                <p>
+                    Now I've switched my focus to bookkeeping and accounting. 
+                    This may seem like a little bit of a left turn, but I find a lot of parallels between these fields.
+                    They all require deep and complex problem-solving skills, and attention to detail. 
+                    I have always found excitement in the idea of a small business, and unfortunately, many small 
+                    business owners struggle to keep their finances in order. I want to be the person who helps them with that.
+                    Helping a small business owner will allow them to help other people through their business, and that is something I want to be a part of.
+                    I'm genuinely excited to learn this field and help the world as much as I can. 
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Project Gallery -->
-    <h2 class="lekton-bold mx-auto section-header" data-aos="fade-up" data-aos-duration="800">Other Projects I've Worked On</h2>
-    <div class="gallery-container" data-aos="fade-up" data-aos-duration="800">
-      <div class="gallery-grid">
-        <!-- Gallery Items -->
-        <div class="gallery-item" data-description="Organ bench that I custom built out of red oak.">
-          <img src="./static/organ_bench.jpg" alt="red oak organ bench">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">Organ Bench</div>
-          </div>
-        </div>
-        <div class="gallery-item" data-description="Fiber optic switching system that I wired for a pipe organ.">
-          <img src="./static/fiber_optic.jpg" alt="Fiber optic switching system">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">Fiber Optic Switching System</div>
-          </div>
-        </div>
-        <div class="gallery-item" data-description="Pipe organ air pressure regulator that I re-leathered because the leather was aged and cracking.">
-          <img src="./static/regulator.jpg" alt="Organ air pressure regulator">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">Organ Air Pressure Regulator</div>
-          </div>
-        </div>
-        <div class="gallery-item" data-description="Solenoids that I installed and wired. Used to control air flow for a pipe organ.">
-          <img src="./static/solenoids.jpg" alt="Organ solenoids">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">Organ Solenoids</div>
-          </div>
-        </div>
-        <div class="gallery-item" data-description="Peterson pipe organ switching system that I wired using punch-downs.">
-          <img src="./static/switching_system2.jpg" alt="Organ switching system">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">Organ Switching System</div>
-          </div>
-        </div>
-        <div class="gallery-item" data-description="Pipe organ switching system that I had to troubleshoot in a church.">
-          <img src="./static/switching_system1.jpg" alt="Organ switching system">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">Organ Switching System</div>
-          </div>
-        </div>
-        <div class="gallery-item" data-description="Custom gaming pc that I built using new parts.">
-          <img src="./static/pc_build1.jpg" alt="New custom gaming pc">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">New custom Gaming PC</div>
-          </div>
-        </div>
-        <div class="gallery-item" data-description="Custom gaming pc that I built using used parts.">
-          <img src="./static/pc_build2.jpg" alt="Used custom gaming pc">
-          <div class="gallery-item-overlay">
-            <div class="gallery-item-title">Used custom Gaming PC</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>What I Can Do</h2>
+            
+            <div class="skills-grid">
+                <!-- Programming Skills -->
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML & CSS</span>
+                        <span class="skill-tag">Qt6</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">MS Word, Excel, Outlook</span>
+                        <span class="skill-tag">AC Wiring</span>
+                        <span class="skill-tag">Audio and Sound Mixing</span>
+                    </div>
+                </div>
 
-    <!-- Fullscreen Modal -->
-    <div id="gallery-modal" class="gallery-modal">
-      <span class="gallery-modal-close">&times;</span>
-      <div class="gallery-modal-content">
-        <img id="modal-image" src="" alt="">
-        <div id="modal-description" class="gallery-modal-description"></div>
-      </div>
-    </div>
+                <!-- Organ Building Skills -->
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pipe Organ Building</span>
+                        <span class="skill-tag">Woodworking</span>
+                        <span class="skill-tag">Budgeting</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Balance Sheet Reconciliaton</span>
+                        <span class="skill-tag">Payroll Calculation</span>
+                    </div>
+                </div>
 
-    <!-- Certifications -->
-    <h2 id="section-header-skills" class="lekton-bold mx-auto section-header" data-aos="fade-up"
-      data-aos-duration="800">Certifications</h2>
-    <div class="row mx-auto section" id="certifications-div">
-      <img src="./static/aplus-logo.jpeg" alt="comptia a+ logo" data-aos="fade-right" data-aos-duration="800"
-        class="certification-logo">
-    </div>
-
-    <!-- Contact -->
-    <div class="row mx-auto section" id="contact-div">
-      <h2 id="contact" class="lekton-bold mx-auto section-header" data-aos="fade-up" data-aos-duration="800">Get in touch with me!
-      </h2>
-      <div class="col-sm" data-aos="fade-right" data-aos-duration="800">
-        <div class="contact-info-container">
-          <div class="contact-info">
-            <i class="devicon-github-original text-pop contact-logo"></i>
-            <a class="contact-info-text" target="_blank" href="https://github.com/rboeger">https://github.com/rboeger</a>
-          </div>
-          <div class="contact-info">
-            <i class="devicon-linkedin-plain text-pop contact-logo"></i>
-            <a class="contact-info-text" target="_blank" href="https://linkedin.com/in/russell-boeger-574650207">https://linkedin.com/in/russell-boeger</a> 
-          </div>
-          <div class="contact-info">
-            <i class="fas fa-envelope text-pop contact-logo"></i>
-            <a class="contact-info-text" target="_blank" href="mailto:russell.boeger@gmail.com">russell.boeger@gmail.com</a>
-          </div>
+                <!-- Bookkeeping Certifications -->
+                <div class="skill-category">
+                    <h3>Certifications & Training</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag cert">QuickBooks Pro-Advisor Level 1</span>
+                        <span class="skill-tag cert">Intuit Bookkeeping Certification</span>
+                        <span class="skill-tag cert">CompTIA A+ Certification</span>
+                        <span class="skill-tag learning">Bookkeeping (training)</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- End Content Section -->
-  </div>
+    <!-- Organ Building Gallery -->
+    <section id="organ-gallery" class="gallery-section">
+        <div class="container">
+            <h2>The Work I'm Proud Of</h2>
+            <!-- <p class="section-intro">Nine years of building custom pipe organs. Here's a peek behind the scenes.</p> -->
+            
+            <!-- Carousel Preview -->
+            <div class="carousel-preview">
+                <div class="carousel-container">
+                    <img class="carousel-image" src="static/building/organ_bench.jpg" alt="Organ Bench">
+                    <div class="carousel-overlay">
+                        <h3 id="carouselTitle">Organ Bench</h3>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                    <span class="indicator" data-index="3"></span>
+                    <span class="indicator" data-index="4"></span>
+                    <span class="indicator" data-index="5"></span>
+                    <span class="indicator" data-index="6"></span>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary gallery-toggle" id="galleryToggle">View Full Gallery</button>
+            
+            <!-- Gallery Modal -->
+            <div class="gallery-modal" id="galleryModal">
+                <div class="modal-content">
+                    <button class="modal-close" id="modalClose">&times;</button>
+                    
+                    <div class="modal-main-image">
+                        <img id="modalImage" src="static/building/organ_bench.jpg" alt="Gallery Image">
+                        <p id="modalImageTitle" class="modal-image-title">Organ Bench</p>
+                    </div>
+                    
+                    <div class="modal-thumbnails">
+                        <img class="thumbnail active" src="static/building/organ_bench.jpg" alt="Organ Bench" data-index="0">
+                        <img class="thumbnail" src="static/building/pc_build1.jpg" alt="Custom PC (new)" data-index="1">
+                        <img class="thumbnail" src="static/building/pc_build2.jpg" alt="Custom PC (used)" data-index="2">
+                        <img class="thumbnail" src="static/building/regulator.jpg" alt="Pressure Regulator" data-index="3">
+                        <img class="thumbnail" src="static/building/solenoids.jpg" alt="Solenoid Components" data-index="4">
+                        <img class="thumbnail" src="static/building/switching_system1.jpg" alt="Switching System" data-index="5">
+                        <img class="thumbnail" src="static/building/switching_system2.jpg" alt="Switching System Detail" data-index="6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Copyright Footer -->
-  <div id="copyright-container" class="lekton-bold">
-    <span id="copyright-text">© Russell Boeger 2025</span>
-  </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Code I've Written</h2>
+            <p class="section-intro">Here are some projects I've built. Click to see them on GitHub.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/software/super-ping-pong-screenshot.png" alt="Super Ping Pong">
+                    </div>
+                    <div class="project-info">
+                        <h3>Super Ping Pong</h3>
+                        <p>A classic arcade-style game built with Python. Features smooth gameplay, AI opponents, and retro-inspired graphics.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/rboeger/super-ping-pong" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            <a href="https://www.russellboeger.com/super-ping-pong/" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- load js file -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./static/pws.js"></script>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/software/rulerfrac-screenshot.png" alt="Ruler Frac">
+                    </div>
+                    <div class="project-info">
+                        <h3>Decimal To Fraction Calculator</h3>
+                        <p>A utility application for working with fractions and measurements. Built with Qt6, this tool helps visualize and calculate fractional measurements easily.</p>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-secondary btn-small">View on GitHub</a>
+                            <a href="https://rboeger.pythonanywhere.com/rulerfrac" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="static/software/chekers-game-screenshot.png" alt="Checkers Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Checkers Game</h3>
+                        <p>A fully-featured checkers game. Implements game logic, move validation.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/rboeger/checkers-game" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                            <a href="https://rboeger.pythonanywhere.com/checkers-game" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <p>Want to see more? Visit my GitHub profile to explore additional projects and repositories.</p>
+                <a href="https://github.com/rboeger" class="btn btn-primary" target="_blank" rel="noopener noreferrer">See All Projects on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bookkeeping & Accounting Section -->
+    <section id="bookkeeping" class="bookkeeping-section">
+        <div class="container">
+            <h2>What I'm Working On</h2>
+            
+            <!-- <div class="bookkeeping-content">
+                <div class="bookkeeping-intro">
+                    <h3>Why This? Why Now?</h3>
+                    <p>
+                        I'm making a career transition into accounting and bookkeeping, and I'm genuinely excited about it. 
+                        I know it might seem like an unusual move from organ building, but hear me out—the skills transfer beautifully. 
+                        Everything I've learned about precision, problem-solving, and mastering complex systems applies perfectly.
+                    </p>
+                    <p>
+                        I'm approaching this the right way: with certifications, continuous learning, and honesty about what I know and don't yet know. 
+                        I have my QuickBooks and Intuit Bookkeeping certifications, and I'm actively expanding my knowledge in accounting principles and practices.
+                    </p>
+                    <ul class="transition-points">
+                        <li><strong>Detail-oriented:</strong> Nine years of precision work taught me to catch the small things—that skill translates directly to bookkeeping.</li>
+                        <li><strong>Problem solver:</strong> Troubleshooting complex mechanical systems prepared me well for financial problem-solving.</li>
+                        <li><strong>Tech-savvy:</strong> I'm comfortable with software and learning new tools quickly.</li>
+                        <li><strong>Hungry to learn:</strong> I've successfully mastered multiple technical fields. I'm ready for another.</li>
+                    </ul>
+                </div> -->
+<!-- 
+                <div class="certifications-showcase">
+                    <h3>My Credentials</h3>
+                    <div class="certs-grid">
+                        <div class="cert-card">
+                            <h4>QuickBooks Certified</h4>
+                            <p>I know QuickBooks inside and out. I can help you set up your books and manage your accounting software effectively.</p>
+                        </div>
+                        <div class="cert-card">
+                            <h4>Intuit Bookkeeping Certified</h4>
+                            <p>Certified in Intuit's bookkeeping principles. I understand the fundamentals and best practices of modern bookkeeping.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="learning-path">
+                    <h3>Improving my bookkeeping knowledge</h3>
+                    <p>
+                        Right now, I'm diving deeper into accounting principles, tax basics, and financial analysis. My goal is to become someone that small business owners trust 
+                        with their books—someone who catches mistakes, suggests improvements, and helps them understand their financial health. I'm not there yet, but I'm 
+                        putting in the work to get there.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Talk</h2>
+            <p>Have questions? Want to chat about music, code, or accounting? I'd love to hear from you.</p>
+            <div class="contact-links">
+                <a href="mailto:russell.boeger@gmail.com" class="btn btn-primary">Send me an email</a>
+                <a href="https://github.com/rboeger" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">See my code</a>
+                <a href="https://linkedin.com/in/russell-boeger" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Russell Boeger. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="static/scripts.js"></script>
 </body>
-
 </html>
