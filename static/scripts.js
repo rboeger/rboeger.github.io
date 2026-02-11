@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
         currentCarouselIndex = (currentCarouselIndex + 1) % carouselImages.length;
         updateCarousel(currentCarouselIndex);
-    }, 4000);
+    }, 5500);
     
     // Allow manual control via indicators
     indicators.forEach(indicator => {
