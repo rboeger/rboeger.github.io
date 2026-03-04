@@ -1,306 +1,504 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Russell Boeger</title>
-    <link rel="stylesheet" href="static/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Russell Boeger</div>
-            <div class="nav-controls">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="icon sun-icon" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
-                    </svg>
-                    <svg class="icon moon-icon" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                    </svg>
-                    <span class="theme-text">Light</span>
-                </button>
-                <button class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#organ-gallery">My Work</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="blog/">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      <div class="nav-container">
+        <div class="logo">Russell Boeger</div>
+        <div class="nav-controls">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <svg class="icon sun-icon" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <svg class="icon moon-icon" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <span class="theme-text">Light</span>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#organ-gallery">My Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="static/selfies/professional-headshot.png" alt="Profile Photo" class="profile-photo">
-            <h1>Hey, I'm Russell Boeger</h1>
-            <p class="tagline">Organ Builder • Coder • Bookkeeper</p>
-            <p class="subtitle">I’ve spent 9 years in the pipe organ industry while coding and woodworking on the side. Then moved into warehouse management and video editing. Now I’m looking to get into bookkeeping and accounting.</p>
-        </div>
+      <div class="hero-content">
+        <img
+          src="static/selfies/professional-headshot.png"
+          alt="Profile Photo"
+          class="profile-photo"
+        />
+        <h1>Hey, I'm Russell Boeger</h1>
+        <p class="tagline">Bookkeeper • Coder • Organ Builder</p>
+        <p class="subtitle">
+          I’ve spent 9 years in the pipe organ industry while coding and
+          woodworking on the side. Then moved into warehouse management and
+          video editing. Now I’m looking to get into bookkeeping and accounting.
+        </p>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>My Story</h2>
-            <div class="about-content">
-                <p>
-                    For 9 years, I've built, designed, and serviced pipe organs. The meticulous, technical work piqued my interest 
-                    and fueled my love of learning. 
-                    Organs are heavily engineered mechanical, electrical, pneumatic symphonies, and I 
-                    loved every minute of bringing them to life. 
-                </p>
-                <p>
-                    But I've always been drawn to code too. 
-                    I've always been a problem solver and optimizer, and programming gave me a natural outlet for that.
-                    Being able to write software to automate tasks and watch your code make a difficult task more manageable is incredibly rewarding.
-                    After taking high school programming classes in Quick Basic and Visual Basic 6, I continued to learn python and JavaScript on my own.
-                    JavaScript, of course, naturally led to web development which requires HTML and CSS. 
-                    I also got into data analysis with Python, using libraries like Pandas to make sense of complex datasets (useful for warehouse management).
-                </p>
-                <p>
-                    Now I've switched my focus to bookkeeping and accounting. 
-                    This may seem like a little bit of a left turn, but I find a lot of parallels between these fields.
-                    They all require deep and complex problem-solving skills, and attention to detail. 
-                    I have always found excitement in the idea of a small business, and unfortunately, many small 
-                    business owners struggle to keep their finances in order. I want to be the person who helps them with that.
-                    Helping a small business owner will allow them to help other people through their business, and that is something I want to be a part of.
-                    I'm genuinely excited to learn this field and help the world as much as I can. 
-                </p>
-            </div>
+      <div class="container">
+        <h2>My Story</h2>
+        <div class="about-content">
+          <p>
+            For 9 years, I've built, designed, and serviced pipe organs. The
+            meticulous, technical work piqued my interest and fueled my love of
+            learning. Organs are heavily engineered mechanical, electrical,
+            pneumatic symphonies, and I loved every minute of bringing them to
+            life.
+          </p>
+          <p>
+            But I've always been drawn to code too. I've always been a problem
+            solver and optimizer, and programming gave me a natural outlet for
+            that. Being able to write software to automate tasks and watch your
+            code make a difficult task more manageable is incredibly rewarding.
+            After taking high school programming classes in Quick Basic and
+            Visual Basic 6, I continued to learn python and JavaScript on my
+            own. JavaScript, of course, naturally led to web development which
+            requires HTML and CSS. I also got into data analysis with Python,
+            using libraries like Pandas to make sense of complex datasets
+            (useful for warehouse management).
+          </p>
+          <p>
+            Now I've switched my focus to bookkeeping and accounting. This may
+            seem like a little bit of a left turn, but I find a lot of parallels
+            between these fields. They all require deep and complex
+            problem-solving skills, and attention to detail. I have always found
+            excitement in the idea of a small business, and unfortunately, many
+            small business owners struggle to keep their finances in order. I
+            want to be the person who helps them with that. Helping a small
+            business owner will allow them to help other people through their
+            business, and that is something I want to be a part of. I'm
+            genuinely excited to learn this field and help the world as much as
+            I can.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2>What I Can Do</h2>
-            
-            <div class="skills-grid">
-                <!-- Programming Skills -->
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML & CSS</span>
-                        <span class="skill-tag">Qt6</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">MS Word, Excel, Outlook</span>
-                        <span class="skill-tag">Quickbooks</span>
-                        <span class="skill-tag">AC Wiring</span>
-                        <span class="skill-tag">Audio and Sound Mixing</span>
-                        <span class="skill-tag">Video Editing</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>What I Can Do</h2>
 
-                <!-- Organ Building Skills -->
-                <div class="skill-category">
-                    <h3>Other Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Pipe Organ Building</span>
-                        <span class="skill-tag">Woodworking</span>
-                        <span class="skill-tag">Budgeting</span>
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Balance Sheet Reconciliaton</span>
-                        <span class="skill-tag">Payroll Calculation</span>
-                    </div>
-                </div>
-
-                <!-- Bookkeeping Certifications -->
-                <div class="skill-category">
-                    <h3>Certifications & Training</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag cert">QuickBooks Pro-Advisor Level 1</span>
-                        <span class="skill-tag cert">Intuit Bookkeeping Certification</span>
-                        <span class="skill-tag cert">CompTIA A+ Certification</span>
-                        <span class="skill-tag cert">Forklift and Reach Truck</span>
-                        <span class="skill-tag learning">Bookkeeping (training)</span>
-                    </div>
-                </div>
+        <div class="skills-grid">
+          <!-- Programming Skills -->
+          <div class="skill-category">
+            <h3>Technical Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML & CSS</span>
+              <span class="skill-tag">Qt6</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">MS Word, Excel, Outlook</span>
+              <span class="skill-tag">Quickbooks</span>
+              <span class="skill-tag">AC Wiring</span>
+              <span class="skill-tag">Audio and Sound Mixing</span>
+              <span class="skill-tag">Video Editing</span>
             </div>
+          </div>
+
+          <!-- Organ Building Skills -->
+          <div class="skill-category">
+            <h3>Other Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Pipe Organ Building</span>
+              <span class="skill-tag">Woodworking</span>
+              <span class="skill-tag">Budgeting</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Balance Sheet Reconciliaton</span>
+              <span class="skill-tag">Payroll Calculation</span>
+            </div>
+          </div>
+
+          <!-- Bookkeeping Certifications -->
+          <div class="skill-category">
+            <h3>Certifications & Training</h3>
+            <div class="skill-tags">
+              <span class="skill-tag cert">QuickBooks Pro-Advisor Level 1</span>
+              <span class="skill-tag cert"
+                >Intuit Bookkeeping Certification</span
+              >
+              <span class="skill-tag cert">CompTIA A+ Certification</span>
+              <span class="skill-tag cert">Forklift and Reach Truck</span>
+              <span class="skill-tag learning">Bookkeeping (training)</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Organ Building Gallery -->
     <section id="organ-gallery" class="gallery-section">
-        <div class="container">
-            <h2>The Work I'm Proud Of</h2>
-            <!-- <p class="section-intro">Nine years of building custom pipe organs. Here's a peek behind the scenes.</p> -->
-            
-            <!-- Carousel Preview -->
-            <div class="carousel-preview">
-                <div class="carousel-container">
-                    <img class="carousel-image" src="static/building/organ_bench.jpg" alt="Organ Bench">
-                    <div class="carousel-overlay">
-                        <h3 id="carouselTitle">Organ Bench</h3>
-                    </div>
-                </div>
-                <div class="carousel-indicators">
-                    <span class="indicator active" data-index="0"></span>
-                    <span class="indicator" data-index="1"></span>
-                    <span class="indicator" data-index="2"></span>
-                    <span class="indicator" data-index="3"></span>
-                    <span class="indicator" data-index="4"></span>
-                    <span class="indicator" data-index="5"></span>
-                    <span class="indicator" data-index="6"></span>
-                    <span class="indicator" data-index="7"></span>
-                    <span class="indicator" data-index="8"></span>
-                    <span class="indicator" data-index="9"></span>
-                    <span class="indicator" data-index="10"></span>
-                    <span class="indicator" data-index="11"></span>
-                    <span class="indicator" data-index="12"></span>
-                    <span class="indicator" data-index="13"></span>
-                    <span class="indicator" data-index="14"></span>
-                </div>
+      <div class="container">
+        <h2>The Work I'm Proud Of</h2>
+        <!-- <p class="section-intro">Nine years of building custom pipe organs. Here's a peek behind the scenes.</p> -->
+
+        <!-- Carousel Preview -->
+        <div class="carousel-preview">
+          <div class="carousel-container">
+            <img
+              class="carousel-image"
+              src="static/building/organ_bench.jpg"
+              alt="Organ Bench"
+            />
+            <div class="carousel-overlay">
+              <h3 id="carouselTitle">Organ Bench</h3>
             </div>
-            
-            <button class="btn btn-primary gallery-toggle" id="galleryToggle">View Full Gallery</button>
-            
-            <!-- Gallery Modal -->
-            <div class="gallery-modal" id="galleryModal">
-                <div class="modal-content">
-                    <button class="modal-close" id="modalClose">&times;</button>
-                    
-                    <div class="modal-main-image">
-                        <img id="modalImage" src="static/building/organ_bench.jpg" alt="Gallery Image">
-                        <p id="modalImageTitle" class="modal-image-title">Organ Bench</p>
-                    </div>
-                    
-                    <div class="modal-thumbnails">
-                        <img class="thumbnail active" src="static/building/organ_bench.jpg" alt="Organ Bench" data-index="0">
-                        <img class="thumbnail" src="static/building/pc_build1.jpg" alt="Custom PC (new)" data-index="1">
-                        <img class="thumbnail" src="static/building/pc_build2.jpg" alt="Custom PC (used)" data-index="2">
-                        <img class="thumbnail" src="static/building/regulator.jpg" alt="Pressure Regulator" data-index="3">
-                        <img class="thumbnail" src="static/building/solenoids.jpg" alt="Solenoid Components" data-index="4">
-                        <img class="thumbnail" src="static/building/switching_system2.jpg" alt="Switching System Detail" data-index="5">
-                        <img class="thumbnail" src="static/building/band_playing.png" alt="Switching System Detail" data-index="6">
-                        <img class="thumbnail" src="static/building/bench_routing_and_finish.jpg" alt="Switching System Detail" data-index="7">
-                        <img class="thumbnail" src="static/building/custom_cat_tree.jpg" alt="Switching System Detail" data-index="8">
-                        <img class="thumbnail" src="static/building/mug_rack.jpg" alt="Switching System Detail" data-index="9">
-                        <img class="thumbnail" src="static/building/custom_coaster_set.jpg" alt="Switching System Detail" data-index="10">
-                        <img class="thumbnail" src="static/building/offset_chest.jpg" alt="Switching System Detail" data-index="11">
-                        <img class="thumbnail" src="static/building/organ_chest_2.jpg" alt="Switching System Detail" data-index="12">
-                        <img class="thumbnail" src="static/building/organ_chest_3.jpg" alt="Switching System Detail" data-index="13">
-                        <img class="thumbnail" src="static/building/sideways_offset_chest.jpg" alt="Switching System Detail" data-index="14">
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+            <span class="indicator" data-index="3"></span>
+            <span class="indicator" data-index="4"></span>
+            <span class="indicator" data-index="5"></span>
+            <span class="indicator" data-index="6"></span>
+            <span class="indicator" data-index="7"></span>
+            <span class="indicator" data-index="8"></span>
+            <span class="indicator" data-index="9"></span>
+            <span class="indicator" data-index="10"></span>
+            <span class="indicator" data-index="11"></span>
+            <span class="indicator" data-index="12"></span>
+            <span class="indicator" data-index="13"></span>
+            <span class="indicator" data-index="14"></span>
+          </div>
         </div>
+
+        <button class="btn btn-primary gallery-toggle" id="galleryToggle">
+          View Full Gallery
+        </button>
+
+        <!-- Gallery Modal -->
+        <div class="gallery-modal" id="galleryModal">
+          <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+
+            <div class="modal-main-image">
+              <img
+                id="modalImage"
+                src="static/building/organ_bench.jpg"
+                alt="Gallery Image"
+              />
+              <p id="modalImageTitle" class="modal-image-title">Organ Bench</p>
+            </div>
+
+            <div class="modal-thumbnails">
+              <img
+                class="thumbnail active"
+                src="static/building/organ_bench.jpg"
+                alt="Organ Bench"
+                data-index="0"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/pc_build1.jpg"
+                alt="Custom PC (new)"
+                data-index="1"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/pc_build2.jpg"
+                alt="Custom PC (used)"
+                data-index="2"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/regulator.jpg"
+                alt="Pressure Regulator"
+                data-index="3"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/solenoids.jpg"
+                alt="Solenoid Components"
+                data-index="4"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/switching_system2.jpg"
+                alt="Switching System Detail"
+                data-index="5"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/band_playing.png"
+                alt="Switching System Detail"
+                data-index="6"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/bench_routing_and_finish.jpg"
+                alt="Switching System Detail"
+                data-index="7"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/custom_cat_tree.jpg"
+                alt="Switching System Detail"
+                data-index="8"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/mug_rack.jpg"
+                alt="Switching System Detail"
+                data-index="9"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/custom_coaster_set.jpg"
+                alt="Switching System Detail"
+                data-index="10"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/offset_chest.jpg"
+                alt="Switching System Detail"
+                data-index="11"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/organ_chest_2.jpg"
+                alt="Switching System Detail"
+                data-index="12"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/organ_chest_3.jpg"
+                alt="Switching System Detail"
+                data-index="13"
+              />
+              <img
+                class="thumbnail"
+                src="static/building/sideways_offset_chest.jpg"
+                alt="Switching System Detail"
+                data-index="14"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Code I've Written</h2>
-            <p class="section-intro">Here are some projects I've built. Click to see them on GitHub.</p>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="static/software/super-ping-pong-screenshot.png" alt="Super Ping Pong">
-                    </div>
-                    <div class="project-info">
-                        <h3>Super Ping Pong</h3>
-                        <p>This is a pong game, written in JavaScript, inspired by Super Ping Pong for the Sega Genesis.
-                            I had a lot of fun making powerups and ps5 controller support.
-                            Powerups include: Bounce(Horizontal and Vertical), speed change(increase and decrease), skull(if ball hits
-                            paddle, it will lose the round),
-                            multiple balls, shield, random location, change paddle size, and sticky paddle.</p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/rboeger/super-ping-pong" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                            <a href="https://www.russellboeger.com/super-ping-pong/" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View Live</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>Code I've Written</h2>
+        <p class="section-intro">
+          Here are some projects I've built. Click to see them on GitHub.
+        </p>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="static/software/rulerfrac-screenshot.png" alt="Ruler Frac">
-                    </div>
-                    <div class="project-info">
-                        <h3>Decimal To Fraction Calculator</h3>
-                        <p>This is a simple decimal to fraction calculator.
-                            However, the resulting fractions are quantized to 16ths or 32nds in order to use them with a ruler or tape
-                            measure. This was used extensively in my previous role as a Pipe Organ Manufacturer.</p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/rboeger/rulerfrac" class="btn btn-secondary btn-small">View on GitHub</a>
-                            <a href="https://russellboeger.com/rulerfrac" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View Live</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="static/software/chekers-game-screenshot.png" alt="Checkers Game">
-                    </div>
-                    <div class="project-info">
-                        <h3>Checkers Game</h3>
-                        <p>This is a game of checkers created in vanilla javascript.
-                            The first turn is randomized and an infinite number of jumps are possible.
-                            Per the official rules of checkers, if a jump is possible, it is required to be taken and any other linked jumps must be taken.</p>
-                        <div class="project-buttons">
-                            <a href="https://github.com/rboeger/checkers-game" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                            <a href="https://rboeger.pythonanywhere.com/checkers-game" class="btn btn-secondary btn-small" target="_blank" rel="noopener noreferrer">View Live</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="static/software/super-ping-pong-screenshot.png"
+                alt="Super Ping Pong"
+              />
             </div>
-
-            <div class="projects-cta">
-                <p>Want to see more? Visit my GitHub profile to explore additional projects and repositories.</p>
-                <a href="https://github.com/rboeger" class="btn btn-primary" target="_blank" rel="noopener noreferrer">See All Projects on GitHub</a>
+            <div class="project-info">
+              <h3>Super Ping Pong</h3>
+              <p>
+                This is a pong game, written in JavaScript, inspired by Super
+                Ping Pong for the Sega Genesis. I had a lot of fun making
+                powerups and ps5 controller support. Powerups include:
+                Bounce(Horizontal and Vertical), speed change(increase and
+                decrease), skull(if ball hits paddle, it will lose the round),
+                multiple balls, shield, random location, change paddle size, and
+                sticky paddle.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/rboeger/super-ping-pong"
+                  class="btn btn-secondary btn-small"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View on GitHub</a
+                >
+                <a
+                  href="https://www.russellboeger.com/super-ping-pong/"
+                  class="btn btn-secondary btn-small"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Live</a
+                >
+              </div>
             </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="static/software/rulerfrac-screenshot.png"
+                alt="Ruler Frac"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Decimal To Fraction Calculator</h3>
+              <p>
+                This is a simple decimal to fraction calculator. However, the
+                resulting fractions are quantized to 16ths or 32nds in order to
+                use them with a ruler or tape measure. This was used extensively
+                in my previous role as a Pipe Organ Manufacturer.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/rboeger/rulerfrac"
+                  class="btn btn-secondary btn-small"
+                  >View on GitHub</a
+                >
+                <a
+                  href="https://russellboeger.com/rulerfrac"
+                  class="btn btn-secondary btn-small"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="static/software/chekers-game-screenshot.png"
+                alt="Checkers Game"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Checkers Game</h3>
+              <p>
+                This is a game of checkers created in vanilla javascript. The
+                first turn is randomized and an infinite number of jumps are
+                possible. Per the official rules of checkers, if a jump is
+                possible, it is required to be taken and any other linked jumps
+                must be taken.
+              </p>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/rboeger/checkers-game"
+                  class="btn btn-secondary btn-small"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View on GitHub</a
+                >
+                <a
+                  href="https://rboeger.pythonanywhere.com/checkers-game"
+                  class="btn btn-secondary btn-small"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Live</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="projects-cta">
+          <p>
+            Want to see more? Visit my GitHub profile to explore additional
+            projects and repositories.
+          </p>
+          <a
+            href="https://github.com/rboeger"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >See All Projects on GitHub</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Bookkeeping & Accounting Section -->
     <section id="bookkeeping" class="bookkeeping-section">
-        <div class="container">
-            <h2>What I'm Working On</h2>
-            <div class="learning-path">
-                <h3>Improving my bookkeeping knowledge</h3>
-                <p>
-                    Right now, I'm diving deeper into accounting principles, tax basics, and financial analysis. 
-                    My goal is to become someone that small business owners trust with their books and general financial health and planning. 
-                    I'm not there yet, but I'm putting in the work to get there. 
-                    I'm currently taking the Tally course on coursera to make sure I have a solid foundation.
-                </p>
-            </div>
+      <div class="container">
+        <h2>What I'm Working On</h2>
+        <div class="learning-path">
+          <h3>Improving my bookkeeping knowledge</h3>
+          <p>
+            Right now, I'm diving deeper into accounting principles, tax basics,
+            and financial analysis. My goal is to become someone that small
+            business owners trust with their books and general financial health
+            and planning. I'm not there yet, but I'm putting in the work to get
+            there. I'm currently taking the Tally course on coursera to make
+            sure I have a solid foundation.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Let's Talk</h2>
-            <p>Have questions? Want to chat about music, code, or accounting? I'd love to hear from you.</p>
-            <div class="contact-links">
-                <a href="mailto:russell.boeger@gmail.com" class="btn btn-primary">Send me an email</a>
-                <a href="https://github.com/rboeger" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">See my code</a>
-                <a href="https://linkedin.com/in/russell-boeger" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </div>
+      <div class="container">
+        <h2>Let's Talk</h2>
+        <p>
+          Have questions? Want to chat about music, code, or accounting? I'd
+          love to hear from you.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:russell.boeger@gmail.com" class="btn btn-primary"
+            >Send me an email</a
+          >
+          <a
+            href="https://github.com/rboeger"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >See my code</a
+          >
+          <a
+            href="https://linkedin.com/in/russell-boeger"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Russell Boeger. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Russell Boeger. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="static/scripts.js"></script>
-</body>
+  </body>
 </html>
